@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BCF55500-95AD-4230-A4D4-8167E2D98C2E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>diaryApp</RootNamespace>
+    <AssemblyName>diaryApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About\aboutus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\aboutus.Designer.cs">
+      <DependentUpon>aboutus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About\aimsandobj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\aimsandobj.Designer.cs">
+      <DependentUpon>aimsandobj.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About\contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\contact.Designer.cs">
+      <DependentUpon>contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About\exeption_message.cs" />
+    <Compile Include="About\login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\login_form.Designer.cs">
+      <DependentUpon>login_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About\memo_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\memo_form.Designer.cs">
+      <DependentUpon>memo_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About\product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\product.Designer.cs">
+      <DependentUpon>product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About\search_memo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\search_memo.Designer.cs">
+      <DependentUpon>search_memo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About\splash_screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\splash_screen.Designer.cs">
+      <DependentUpon>splash_screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About\updates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\updates.Designer.cs">
+      <DependentUpon>updates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About\user_manage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About\user_manage.Designer.cs">
+      <DependentUpon>user_manage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="About\aboutus.resx">
+      <DependentUpon>aboutus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About\aimsandobj.resx">
+      <DependentUpon>aimsandobj.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About\contact.resx">
+      <DependentUpon>contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About\login_form.resx">
+      <DependentUpon>login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About\memo_form.resx">
+      <DependentUpon>memo_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About\product.resx">
+      <DependentUpon>product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About\search_memo.resx">
+      <DependentUpon>search_memo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About\splash_screen.resx">
+      <DependentUpon>splash_screen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About\updates.resx">
+      <DependentUpon>updates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About\user_manage.resx">
+      <DependentUpon>user_manage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\diaryApp.About.aboutus.resources" />
+    <EmbeddedResource Include="obj\Debug\diaryApp.About.login_form.resources" />
+    <EmbeddedResource Include="obj\Debug\diaryApp.About.memo_form.resources" />
+    <EmbeddedResource Include="obj\Debug\diaryApp.About.user_manage.resources" />
+    <EmbeddedResource Include="obj\Debug\diaryApp.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\diaryApp.Properties.Resources.resources" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="bin\Debug\data\docs1.rtf" />
+    <None Include="bin\Debug\data\docs\1.rtf" />
+    <None Include="bin\Debug\data\docs\2.rtf" />
+    <None Include="bin\Debug\data\docs\3.rtf" />
+    <None Include="bin\Debug\data\docs\4.rtf" />
+    <None Include="bin\Debug\data\docs\5.rtf" />
+    <None Include="bin\Debug\data\docs\another.rtf" />
+    <None Include="bin\Debug\data\docs\four.rtf" />
+    <None Include="bin\Debug\data\docs\one.rtf" />
+    <None Include="bin\Debug\data\docs\three.rtf" />
+    <None Include="bin\Debug\data\docs\two.rtf" />
+    <None Include="bin\Debug\diaryApp.exe.config" />
+    <None Include="data\docs\1.rtf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\diaryApp.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\diaryApp.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\diaryApp.csproj.ResolveComReference.cache" />
+    <None Include="obj\Debug\diaryApp.csprojAssemblyReference.cache" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toolsicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settingicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Calendar_month_date_schedule_blank_4732025.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\pics\2.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\pics\1.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\pics\3.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\pics\4.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\pics\7.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\pics\6.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\pics\8.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\pics\5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closecalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\music\1.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\music\2.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="data\music\3.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_floppy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconfinder_update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\okay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font_size.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_back_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font_color_strike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\font_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indent-decrease.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indent_increase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align_justify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align_center.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align_right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\align_left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_1608823.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\AxInterop.WMPLib.dll" />
+    <Content Include="bin\Debug\data\music\1.mp3" />
+    <Content Include="bin\Debug\data\music\2.mp3" />
+    <Content Include="bin\Debug\data\music\3.mp3" />
+    <Content Include="bin\Debug\data\pics\1.jpg" />
+    <Content Include="bin\Debug\data\pics\2.jpg" />
+    <Content Include="bin\Debug\data\pics\3.jpg" />
+    <Content Include="bin\Debug\data\pics\4.jpg" />
+    <Content Include="bin\Debug\data\pics\5.jpg" />
+    <Content Include="bin\Debug\data\pics\6.jpg" />
+    <Content Include="bin\Debug\data\pics\7.jpg" />
+    <Content Include="bin\Debug\data\pics\8.jpg" />
+    <Content Include="bin\Debug\diaryApp.exe" />
+    <Content Include="bin\Debug\diaryApp.pdb" />
+    <Content Include="bin\Debug\Interop.WMPLib.dll" />
+    <Content Include="obj\Debug\AxInterop.WMPLib.dll" />
+    <Content Include="obj\Debug\diaryApp.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\diaryApp.exe" />
+    <Content Include="obj\Debug\diaryApp.pdb" />
+    <Content Include="obj\Debug\Interop.WMPLib.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <None Include="Resources\splash_screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
